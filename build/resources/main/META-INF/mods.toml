@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="MIT License"
+
+[[mods]]
+modId="skelly_and_bones"
+version="1.0.0"
+displayName="Skelly & Bones"
+credits="Mod made by Voxla - Created using mod maker MCreator"
+displayURL="https://www.curseforge.com/members/voxla/projects"
+logoFile="logo.png"
+authors="Voxla"
+description='''
+A small mod that adds two unique neutral skeletons to the game that can be traded with.
+'''
+
+[[dependencies.skelly_and_bones]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+[[dependencies.skelly_and_bones]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+

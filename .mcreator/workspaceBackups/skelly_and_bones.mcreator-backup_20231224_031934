@@ -1,0 +1,707 @@
+{
+  "mod_elements": [
+    {
+      "name": "IronPike",
+      "type": "tool",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_pike",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skelly_and_bones/models/item/iron_pike.json",
+          "src/main/java/net/mcreator/skellyandbones/item/IronPikeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "IronKnight",
+      "type": "armor",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_knight",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skelly_and_bones/models/item/iron_knight_helmet.json",
+          "src/main/java/net/mcreator/skellyandbones/item/IronKnightItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Skeletonsfollowproc",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skeletonsfollowproc",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/procedures/SkeletonsfollowprocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Skelly",
+      "type": "animatedentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skelly",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skelly_and_bones/models/item/skelly_spawn_egg.json",
+          "src/main/java/net/mcreator/skellyandbones/entity/model/SkellyModel.java",
+          "src/main/java/net/mcreator/skellyandbones/entity/SkellyEntity.java",
+          "src/main/java/net/mcreator/skellyandbones/client/renderer/SkellyRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "Bones",
+      "type": "animatedentity",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bones",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/skelly_and_bones/models/item/bones_spawn_egg.json",
+          "src/main/java/net/mcreator/skellyandbones/client/renderer/BonesRenderer.java",
+          "src/main/java/net/mcreator/skellyandbones/entity/BonesEntity.java",
+          "src/main/java/net/mcreator/skellyandbones/entity/model/BonesModel.java"
+        ]
+      }
+    },
+    {
+      "name": "SkellySpawn",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skelly_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/procedures/SkellySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SkellyOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skelly_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/procedures/SkellyOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BonesOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bones_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/procedures/BonesOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SkellyOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skelly_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/procedures/SkellyOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SkellySpawnTimer",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skelly_spawn_timer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/procedures/SkellySpawnTimerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Skellyspawntimest",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skellyspawntimest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/procedures/SkellyspawntimestProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Setskellyspawntime",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "setskellyspawntime",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/command/SetskellyspawntimeCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "Disaply",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "disaply",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/procedures/DisaplyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dsadasadw",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dsadasadw",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/procedures/DsadasadwProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Testingoverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testingoverlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/client/gui/TestingoverlayOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "SkellyAndBonesTradingGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skelly_and_bones_trading_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/network/SkellyAndBonesTradingGuiSlotMessage.java",
+          "src/main/java/net/mcreator/skellyandbones/client/gui/SkellyAndBonesTradingGuiScreen.java",
+          "src/main/java/net/mcreator/skellyandbones/world/inventory/SkellyAndBonesTradingGuiMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "SkellyRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skelly_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/procedures/SkellyRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SetPageTrades",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_page_trades",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/procedures/SetPageTradesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RemoveItemWhen",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_item_when",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/procedures/RemoveItemWhenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RemoveItemWhen2",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_item_when_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/procedures/RemoveItemWhen2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RemoveItemWhen3",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_item_when_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/procedures/RemoveItemWhen3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RemoveItemWhen4",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "remove_item_when_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/procedures/RemoveItemWhen4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BonesRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bones_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/procedures/BonesRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BonesOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bones_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/procedures/BonesOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SkellyAndBonesConfig",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skelly_and_bones_config",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/skellyandbones/procedures/SkellyAndBonesConfigProcedure.java"
+        ],
+        "dependencies": []
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "SkellySpawnTimer",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "SkellySpawnNumber",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "skellyandbonestalkingtimer",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "skellyandbonestalkingactive",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "skellyandbones",
+      "files": [
+        "skellyandbones"
+      ],
+      "category": "record",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.skelly_and_bones.iron_knight_leggings": "Iron Knight Leggings",
+      "entity.skelly_and_bones.bones": "Bones",
+      "gui.skelly_and_bones.skelly_and_bones_trading_gui.button_trade1": "Trade",
+      "gui.skelly_and_bones.skelly_and_bones_trading_gui.button_trade2": "Trade",
+      "gui.skelly_and_bones.skelly_and_bones_trading_gui.button_trade3": "Trade",
+      "item.skelly_and_bones.iron_knight_helmet": "Iron Knight Helmet",
+      "item.skelly_and_bones.skelly_spawn_egg": "Skelly Spawn Egg",
+      "gui.skelly_and_bones.skelly_and_bones_trading_gui.button_trade": "Trade",
+      "entity.skelly_and_bones.skelly": "Skelly",
+      "item.skelly_and_bones.iron_knight_chestplate": "Iron Knight Chestplate",
+      "subtitles.skellyandbones": "",
+      "item.skelly_and_bones.iron_pike": "Iron Pike",
+      "item.skelly_and_bones.bones_spawn_egg": "Bones Spawn Egg",
+      "item.skelly_and_bones.iron_knight_boots": "Iron Knight Boots"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "skelly_and_bones",
+    "modName": "Skelly \u0026 Bones",
+    "version": "1.0.0",
+    "description": "A small mod that adds two unique neutral skeletons to the game that can be traded with.",
+    "author": "Voxla",
+    "websiteURL": "https://www.curseforge.com/members/voxla/projects",
+    "license": "MIT License",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "mbicon",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Mod made by Voxla - Created using mod maker MCreator",
+    "modElementsPackage": "net.mcreator.skellyandbones",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}

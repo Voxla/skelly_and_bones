@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "skelly_and_bones:items/iron_knight_helmet"
+  }
+}

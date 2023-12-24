@@ -1,0 +1,11 @@
+{
+  "skellyandbones": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "skelly_and_bones:skellyandbones",
+        "stream": true
+      }
+    ]
+  }
+}

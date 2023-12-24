@@ -1,0 +1,7 @@
+{
+  "parent": "skelly_and_bones:custom/iron_pike",
+  "textures": {
+    "0": "skelly_and_bones:blocks/iron_pike",
+    "particle": "skelly_and_bones:items/iron_pike"
+  }
+}
