@@ -208,7 +208,28 @@
         "files": [
           "src/main/java/net/mcreator/skellyandbones/procedures/SkellyOnEntityTickUpdateProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -262,26 +283,6 @@
       }
     },
     {
-      "name": "Disaply",
-      "type": "procedure",
-      "sortid": 13,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "disaply",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/mcreator/skellyandbones/procedures/DisaplyProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Dsadasadw",
       "type": "procedure",
       "sortid": 14,
@@ -304,7 +305,7 @@
     {
       "name": "Testingoverlay",
       "type": "overlay",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "testingoverlay",
       "metadata": {
